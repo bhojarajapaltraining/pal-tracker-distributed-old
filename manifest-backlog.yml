@@ -6,6 +6,6 @@ applications:
   memory: 1G
   instances: 1
   env:
-    https://api.system.dev.pcf-aws.com: http://FILL_ME_IN
+   REGISTRATION_SERVER_ENDPOINT: https://distribution.apps.dev.pcf-aws.com
   services:
   - tracker-backlog-database

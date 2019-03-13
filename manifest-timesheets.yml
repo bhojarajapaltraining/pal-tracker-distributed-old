@@ -1,11 +1,11 @@
 applications:
-- name: tracker-timesheets
+- name: tracker-timesheets2
   path: ./applications/timesheets-server/build/libs/timesheets-server.jar
   routes:
   - route: timesheets-pal-distribution.apps.dev.pcf-aws.com
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: https://distribution.apps.dev.pcf-aws.com
+    REGISTRATION_SERVER_ENDPOINT: registration-pal-distribution.apps.dev.pcf-aws.com
   services:
   - tracker-timesheets-database
